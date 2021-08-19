@@ -1,0 +1,66 @@
+.preheader {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100px;
+
+  background-image: url("/images/preheader-bg.png");
+  background-repeat: repeat-x;
+  color: #fff;
+
+  &__props {
+    display: flex;
+  }
+
+  &__phone {
+    font-size: 25px;
+    color: #000;
+    margin-bottom: px;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end;
+    margin-right: 26px;
+  }
+
+  &__lang-toggle {
+    color: #c1c1c1;
+    font-size: 15px;
+    padding-bottom: 8px;
+    margin-right: 8px;
+
+    &:hover {
+      color: #000;
+      border-bottom: 3px solid #27c5dc;
+
+    }
+  }
+
+  &__consult {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+
+    &::after {
+      content: url("/images/header-consult.svg");
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 70px;
+    }
+  }
+
+  &__consult-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+  }
+}
