@@ -1,14 +1,14 @@
-# node
-node_modules
-
-# ide
+# IDE
 .idea
 .vscode
 
-# General
-backstop_data
-dist
-.cache
+# Node
+node_modules
 
 # MacOS
 .DS_Store
+
+# Generated files
+backstop_data
+dist
+.cache

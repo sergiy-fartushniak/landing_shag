@@ -1,0 +1,14 @@
+.nav {
+  &__list {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__link {
+    color: #fff;
+    font-size: 15px;
+    line-height: 23px;
+    padding: 20px;
+    text-decoration: none;
+  }
+}

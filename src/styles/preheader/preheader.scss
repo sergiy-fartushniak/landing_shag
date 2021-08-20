@@ -1,21 +1,23 @@
 .preheader {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
   height: 100px;
+  display: flex;
+  justify-content: center;
 
   background-image: url("/images/preheader-bg.png");
   background-repeat: repeat-x;
   color: #fff;
 
-  &__props {
+  &__container {
+    width: 1024px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  &__phone {
-    font-size: 25px;
-    color: #000;
-    margin-bottom: px;
+  &__props {
+    display: flex;
+    gap: 30px;
+    align-items: flex-end;
   }
 
   &__info {
@@ -23,7 +25,12 @@
     flex-direction: column;
     gap: 12px;
     align-items: flex-end;
-    margin-right: 26px;
+  }
+
+  &__phone {
+    font-size: 25px;
+    color: #000;
+    margin-bottom: 12px;
   }
 
   &__lang-toggle {
@@ -35,23 +42,26 @@
     &:hover {
       color: #000;
       border-bottom: 3px solid #27c5dc;
-
     }
   }
 
   &__consult {
     position: relative;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
 
     &::after {
       content: url("/images/header-consult.svg");
       position: absolute;
       z-index: -1;
-      top: 0;
+      top: -20px;
       left: 0;
       width: 200px;
       height: 70px;
+      overflow: hidden;
+
     }
   }
 

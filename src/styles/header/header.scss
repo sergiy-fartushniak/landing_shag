@@ -1,0 +1,41 @@
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+
+  &__container {
+    width: 1024px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__links {
+    display: flex;
+  }
+
+  &__selector {
+    position: relative;
+    background-color: #2b2b2b;
+
+    &::after {
+      content: url("/images/header-selector.svg");
+      position: absolute;
+      top: 10px;
+      right: 16px;
+      height: 6px;
+      width: 8px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 5px 32px;
+    font-size: 15px;
+    color: #fff;
+
+  }
+}

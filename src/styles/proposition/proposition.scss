@@ -1,0 +1,24 @@
+.proposition {
+  &__title {
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  &__gallery {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__card {
+    flex: 1 1 300px;
+  }
+
+  &__card-image {
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    border-radius: 30px;
+    height: 284px;
+  }
+}
