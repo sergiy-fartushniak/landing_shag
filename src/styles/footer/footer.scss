@@ -1,0 +1,45 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 178px;
+  background-color: #000;
+  color: #fff;
+
+  &__title {
+    margin-bottom: 16px;
+  }
+
+  &__links {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 26px;
+  }
+
+  &__link {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--fb {
+      background-image: url("/images/facebook.svg");
+      border: 1px solid $color-light-blue;
+    }
+
+    &--yt {
+      background-image: url("/images/youtube.svg");
+    }
+
+    &--inst {
+      background-image: url("/images/insta.svg");
+    }
+  }
+
+  &__copyright {
+    font-size: 11px;
+  }
+}

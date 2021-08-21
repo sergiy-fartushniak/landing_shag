@@ -1,6 +1,6 @@
 .preheader {
-  height: 100px;
   display: flex;
+  height: 100px;
   justify-content: center;
 
   background-image: url("/images/preheader-bg.png");
@@ -8,15 +8,22 @@
   color: #fff;
 
   &__container {
-    width: 1024px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    width: 1024px;
+  }
+
+  &__logo {
+    align-self: center;
+  }
+
+  &__logo-link {
+    display: flex;
   }
 
   &__props {
     display: flex;
-    gap: 30px;
+    gap: 26px;
     align-items: flex-end;
   }
 
@@ -25,15 +32,20 @@
     flex-direction: column;
     gap: 12px;
     align-items: flex-end;
+    padding-bottom: 6px;
   }
 
   &__phone {
     font-size: 25px;
     color: #000;
     margin-bottom: 12px;
+    @include onMobile {
+      display: none;
+    }
   }
 
   &__lang-toggle {
+    position: relative;
     color: #c1c1c1;
     font-size: 15px;
     padding-bottom: 8px;
@@ -41,7 +53,19 @@
 
     &:hover {
       color: #000;
-      border-bottom: 3px solid #27c5dc;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 2px;
+        width: 100%;
+        height: 3px;
+        background-color: $color-light-blue;
+      }
+    }
+
+    @include onMobile {
+      display: none;
     }
   }
 
@@ -51,17 +75,16 @@
     justify-content: center;
     align-items: center;
     width: 200px;
+    padding-bottom: 20px;
 
     &::after {
       content: url("/images/header-consult.svg");
       position: absolute;
       z-index: -1;
-      top: -20px;
-      left: 0;
+      top: -16px;
+      left: -10px;
       width: 200px;
       height: 70px;
-      overflow: hidden;
-
     }
   }
 

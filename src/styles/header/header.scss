@@ -1,14 +1,11 @@
 .header {
-  display: flex;
-  justify-content: center;
   background-color: #000;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
 
-  &__container {
-    width: 1024px;
-    height: 40px;
-    display: flex;
+  @include onMobile {
     justify-content: space-between;
-    align-items: center;
   }
 
   &__links {
@@ -17,7 +14,7 @@
 
   &__selector {
     position: relative;
-    background-color: #2b2b2b;
+    background-color: $color-gray;
 
     &::after {
       content: url("/images/header-selector.svg");
@@ -26,6 +23,47 @@
       right: 16px;
       height: 6px;
       width: 8px;
+    }
+  }
+
+  &__button {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    padding: 12px 34px 12px 18px;
+    font-size: 15px;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  &__selector-list {
+    display: none;
+    &--active {
+      position: relative;
+      display: block;
+      background-color: #fff;
+      background-image: url("/images/preheader-bg.png");
+      background-repeat: repeat-y;
+      background-position: center;
+      background-size: contain;
+    }
+  }
+
+  &__selector-town {
+    position: relative;
+    color: #000;
+    display: block;
+    padding: 10px 25px;
+    text-decoration: none;
+
+    &:hover::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 10px;
+      width: 3px;
+      height: 100%;
+      background-color: $color-light-blue;
     }
   }
 

@@ -11,8 +11,8 @@
   <body>
     <div class="preheader">
       <div class="preheader__container">
-        <div class="preheaader__logo">
-          <a href="/">
+        <div class="preheader__logo">
+          <a href="/" class="preheader__logo-link">
             <img src="./images/LOGO.png" alt="logo">
           </a>
         </div>
@@ -20,20 +20,20 @@
           <div class="preheader__info">
             <a href="tel:" class="preheader__phone">+7 (095) 577-06-50</a>
             <div class="preheader__lang">
-              <a href="" class="preheader__lang-toggle">CZ</a>
-              <a href="" class="preheader__lang-toggle">KH</a>
-              <a href="" class="preheader__lang-toggle">UA</a>
-              <a href="" class="preheader__lang-toggle">PO</a>
-              <a href="" class="preheader__lang-toggle">RU</a>
-              <a href="" class="preheader__lang-toggle">EN</a>
-              <a href="" class="preheader__lang-toggle">PT</a>
-              <a href="" class="preheader__lang-toggle">EST</a>
-              <a href="" class="preheader__lang-toggle">SK</a>
-              <a href="" class="preheader__lang-toggle">BY</a>
-              <a href="" class="preheader__lang-toggle">BG</a>
-              <a href="" class="preheader__lang-toggle">GE</a>
-              <a href="" class="preheader__lang-toggle">AZ</a>
-              <a href="" class="preheader__lang-toggle">KZ</a>
+              <a href="/" class="preheader__lang-toggle">CZ</a>
+              <a href="/" class="preheader__lang-toggle">KH</a>
+              <a href="/" class="preheader__lang-toggle">UA</a>
+              <a href="/" class="preheader__lang-toggle">PO</a>
+              <a href="/" class="preheader__lang-toggle">RU</a>
+              <a href="/" class="preheader__lang-toggle">EN</a>
+              <a href="/" class="preheader__lang-toggle">PT</a>
+              <a href="/" class="preheader__lang-toggle">EST</a>
+              <a href="/" class="preheader__lang-toggle">SK</a>
+              <a href="/" class="preheader__lang-toggle">BY</a>
+              <a href="/" class="preheader__lang-toggle">BG</a>
+              <a href="/" class="preheader__lang-toggle">GE</a>
+              <a href="/" class="preheader__lang-toggle">AZ</a>
+              <a href="/" class="preheader__lang-toggle">KZ</a>
             </div>
           </div>
           <div class="preheader__consult">
@@ -43,42 +43,85 @@
       </div>
     </div>
     <header class="header">
-      <div class="header__container">
-        <nav class="header__nav nav">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="/" class="nav__link">Обучение</a>
+      <nav class="header__nav nav">
+        <div class="nav__mobile">
+          <div class="nav__mobile-toggler">=</div>
+          <ul class="nav__mobile-list">
+            <li class="nav__mobile-item">
+              <a href="/" class="nav__mobile-link">Обучение</a>
             </li>
-            <li class="nav__item">
-              <a href="/" class="nav__link">Мероприятия</a>
+            <li class="nav__mobile-item">
+              <a href="/" class="nav__mobile-link">Мероприятия</a>
             </li>
-            <li class="nav__item">
-              <a href="/" class="nav__link">Тесты</a>
+            <li class="nav__mobile-item">
+              <a href="/" class="nav__mobile-link">Тесты</a>
             </li>
-            <li class="nav__item">
-              <a href="/" class="nav__link">Об академии</a>
+            <li class="nav__mobile-item">
+              <a href="/" class="nav__mobile-link">Об академии</a>
             </li>
-            <li class="nav__item">
-              <a href="/" class="nav__link">Контакты</a>
+            <li class="nav__mobile-item">
+              <a href="/" class="nav__mobile-link">Контакты</a>
             </li>
           </ul>
-        </nav>
-        <div class="header__links">
-          <div class="header__selector">
+        </div>
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="/" class="nav__link">Обучение</a>
+          </li>
+          <li class="nav__item">
+            <a href="/" class="nav__link">Мероприятия</a>
+          </li>
+          <li class="nav__item">
+            <a href="/" class="nav__link">Тесты</a>
+          </li>
+          <li class="nav__item">
+            <a href="/" class="nav__link">Об академии</a>
+          </li>
+          <li class="nav__item">
+            <a href="/" class="nav__link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__links">
+        <div class="header__selector">
+          <div
+            class="header__button"
+          >
+            Нижний Новгород
+          </div>
+          <div class="header__selector-list">
+            <a
+            href="/"
+            class="header__selector-town"
+            >
+            Москва
+            </a>
             <a
               href="/"
-              class="header__link"
+              class="header__selector-town"
             >
-              Нижний Новгород
+            Санкт-Петербург
+            </a>
+            <a
+              href="/"
+              class="header__selector-town"
+            >
+            Омск
+            </a>
+            <a
+              href="/"
+              class="header__selector-town"
+            >
+              Таганрог
             </a>
           </div>
-          <a
-            href="/"
-            class="header__link"
-          >
-            Оплатить обучение
-          </a>
         </div>
+        <a
+          href="/"
+          class="header__link"
+        >
+          Оплатить обучение
+        </a>
       </div>
     </header>
     <div class="header-intro">
@@ -111,48 +154,173 @@
             </a>
           </div>
         </div>
+        <section class="main__section proposition">
+          <h3 class="proposition__title">
+            мы предлагаем
+          </h3>
+          <div class="proposition__gallery">
+            <span class="proposition__card">
+              <img
+                src="./images/propos-1.jpg"
+                alt="laptop"
+                class="proposition__card-image"
+              >
+              <p class="proposition__info">
+                Интенсивную подготовку для желающих приобрести базовые знания в сфере информационных технологий
+              </p>
+            </span>
+            <span class="proposition__card">
+              <img
+                src="./images/propos-2.jpg"
+                alt="chess"
+                class="proposition__card-image"
+              >
+              <p class="proposition__info">
+                Программы для людей, желающих стать руководителями IT проектов
+              </p>
+            </span>
+            <span class="proposition__card">
+              <img
+                src="./images/propos-3.jpg"
+                alt="developer"
+                class="proposition__card-image"
+              >
+              <p class="proposition__info">
+                Программы для всех желающих приобрести дополнительные навыки в современных цифровых профессиях
+              </p>
+            </span>
+          </div>
+        </section>
+        <section class="main__section programm">
+          <h3 class="programm__title">
+            программа
+          </h3>
+          <div class="programm__container">
+            <div class="programm__card">
+              <div class="programm__card-container programm__card-container--1">
+                <span class="programm__card-text">
+                  STEP IT BOOTCAMP — интенсивная подготовка
+                  <a href="/" class="programm__card-button">
+                    <img src="./images/arrow-1.svg" alt="button">
+                  </a>
+                </span>
+
+              </div>
+
+            </div>
+            <div class="programm__card">
+              <div class="programm__card-container programm__card-container--2">
+                <span class="programm__card-text">
+                  Курс IT Project Management
+                  <a href="/" class="programm__card-button">
+                    <img src="./images/arrow-1.svg" alt="button">
+                  </a>
+                </span>
+              </div>
+
+            </div>
+            <div class="programm__card">
+              <div class="programm__card-container programm__card-container--3">
+                <span class="programm__card-text">
+                  Курс цифровой фотографии
+                  <a href="/" class="programm__card-button">
+                    <img src="./images/arrow-1.svg" alt="button">
+                  </a>
+                </span>
+              </div>
+
+            </div>
+          </div>
+        </section>
+        <section class="main__section benefits">
+          <h3 class="benefits__title">Преимущества</h3>
+          <div class="benefits__container">
+            <div class="benefits__card">
+              <img
+                src="./images/benef-1.svg"
+                class="benefits__img"
+                alt="practice"
+              >
+              <div class="benefits__text">
+                Практика. Работа<br>над своими проектами
+              </div>
+            </div>
+            <div class="benefits__card">
+              <img
+                src="./images/benef-2.svg"
+                class="benefits__img"
+                alt="profs"
+              >
+              <div class="benefits__text">
+                Преподаватели-<br>практики
+              </div>
+            </div>
+            <div class="benefits__card">
+              <img
+                src="./images/benef-3.svg"
+                class="benefits__img"
+                alt="team"
+              >
+              <div class="benefits__text">
+                Атмосфера развития<br>и командной работы
+              </div>
+            </div>
+            <div class="benefits__card">
+              <img
+                src="./images/benef-4.svg"
+                class="benefits__img"
+                alt="start"
+              >
+              <div class="benefits__text">
+                Лучший способ быстрого<br>старта в IT, погружение в IT
+              </div>
+            </div>
+          </div>
+
+        </section>
+        <section class="main__section consultation">
+          <div class="consultation__picture-wrapper consultation__picture-wrapper--left">
+            <img
+              src="./images/consult-left.png"
+              alt="woman"
+              class="consultation__picture consultation__picture--left"
+            >
+          </div>
+          <div class="consultation__content">
+            <h3 class="consultation__title">
+              Получить консультацию по интенсивным программам
+            </h3>
+            <p class="consultation__text">
+              Интенсивные программы STEP IT Academy предназначены для получения основополагающих знаний и навыков, либо для усовершенствования знаний в различных областях сферы информационных технологий. Каждый желающий может найти подходящую программу для своего уровня знаний и подготовки.
+              <br>
+              <br>
+              Наши консультанты с удовольствием дадут вам полноценную информацию о всех интенсивных программах Академии и помогут с выбором подходящего курса.
+            </p>
+            <a href="/" class="consultation__button">Получить консультацию</a>
+          </div>
+          <div class="consultation__picture-wrapper consultation__picture-wrapper--right">
+            <img
+              src="./images/consult-right.png"
+              alt="woman"
+              class="consultation__picture consultation__picture--right"
+            >
+          </div>
+        </section>
       </div>
-      <section class="main__section proposition">
-        <h3 class="proposition__title">
-          мы предлагаем
-        </h3>
-        <div class="proposition__gallery">
-          <div class="proposition__card">
-            <img
-              src="./images/propos-1.jpg"
-              alt="laptop"
-              class="proposition__card-image"
-            >
-            <p class="proposition__info">
-              Интенсивную подготовку для желающих приобрести базовые знания в сфере информационных технологий
-            </p>
-          </div>
-          <div class="proposition__card">
-            <img
-              src="./images/propos-2.jpg"
-              alt="chess"
-              class="proposition__card-image"
-            >
-            <p class="proposition__info">
-              Программы для людей, желающих стать руководителями IT проектов
-            </p>
-          </div>
-          <span class="proposition__card">
-            <img
-              src="./images/propos-3.jpg"
-              alt="developer"
-              class="proposition__card-image"
-            >
-            <p class="proposition__info">
-              Программы для всех желающих приобрести дополнительные навыки в современных цифровых профессиях
-            </p>
-          </span>
-        </div>
-      </section>
-      <section class="main__section programm"></section>
-      <section class="main__section"></section>
-      <section class="main__section"></section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <h3 class="footer__title">
+        Следите за нами в социальных сетях:
+      </h3>
+      <div class="footer__links">
+        <a href="/" class="footer__link footer__link--fb"></a>
+        <a href="/" class="footer__link footer__link--yt"></a>
+        <a href="/" class="footer__link footer__link--inst"></a>
+      </div>
+      <p class="footer__copyright">
+        &copy; 1999-2018 Компьютерная Академия ШАГ
+      </p>
+    </footer>
+    <script src="app.js"></script>
   </body>
 </html>

@@ -1,0 +1,69 @@
+.consultation {
+  display: flex;
+
+  &__picture-wrapper {
+    &--left {
+      margin-right: 40px;
+    }
+  }
+
+  &__picture {
+    height: 648px;
+    object-fit: cover;
+
+    &--left {
+      width: 12vw;
+      object-position: right;
+      border-radius: 0 30px 30px 0;
+    }
+
+    &--right {
+      object-position: left;
+      width: 40vw;
+    }
+  }
+
+  &__content {
+    width: 40vw;
+    margin-right: 50px;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
+
+  &__text {
+    margin-bottom: 40px;
+  }
+
+  &__button {
+    color: #000;
+    font-weight: bold;
+    background-color: #fff;
+    padding: 15px 40px;
+    border: 2px solid $color-cold-blue;
+    border-radius: 10px;
+    transition: background-color $transition-duration,
+      color $transition-duration;
+
+    &:hover {
+      background-color: $color-cold-blue;
+      color: #fff;
+    }
+  }
+
+  @include onMobile {
+
+    justify-content: center;
+
+    &__content {
+      width: 100%;
+      margin: 0;
+    }
+    &__picture-wrapper {
+      display: none;
+    }
+  }
+}

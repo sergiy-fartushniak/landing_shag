@@ -10,13 +10,12 @@
 
   &__container {
     margin-top: 90px;
-    width: 1024px;
+    max-width: 1920px;
     display: flex;
     flex-direction: column;
   }
 
   &__title {
-
     font-size: 50px;
     text-transform: uppercase;
     font-weight: bold;
@@ -31,16 +30,17 @@
   &__text {
     position: relative;
     margin-left: 30px;
-    width: 540px;
+    max-width: 540px;
     line-height: 21px;
     margin-bottom: 30px;
+
     &::before {
       content: "";
       position: absolute;
       left: -30px;
       width: 3px;
       height: 85px;
-      background-color: #27c5dc;
+      background-color: $color-light-blue;
       border-radius: 10px;
     }
   }
@@ -49,5 +49,13 @@
     display: flex;
     align-items: flex-end;
     gap: 20px;
+  }
+
+  @include onMobile {
+    height: 480px;
+
+    &__title {
+      font-size: 25px;
+    }
   }
 }
